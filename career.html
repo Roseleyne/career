@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Roseleyne Duarte Silva — Trajetória Profissional</title>
+<meta name="description" content="20 anos de trajetória profissional — de atendimento ao cliente e e-commerce ao topo da engenharia de qualidade de software."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --ink:      #0c0c0e;
+  --ink2:     #2a2a35;
+  --mid:      #64748b;
+  --pale:     #f0ede8;
+  --warm:     #faf8f4;
+  --white:    #ffffff;
+  --gold:     #c9a84c;
+  --gold2:    #f5d98b;
+  --teal:     #00c4a0;
+  --purple:   #7c5cbf;
+  --rose:     #d4506e;
+  --border:   #e8e3db;
+  --serif:    'Fraunces', Georgia, serif;
+  --sans:     'Inter', system-ui, sans-serif;
+  --mono:     'JetBrains Mono', monospace;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--sans);
+  background: var(--warm);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(250,248,244,.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 clamp(1rem,5vw,3rem);
+  height: 58px;
+}
+.nav-brand {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -.01em;
+}
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  font-size: .8rem;
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--mid);
+  text-decoration: none;
+  transition: color .2s;
+}
+.nav-links a:hover { color: var(--gold); }
+@media(max-width:640px){ .nav-links { display:none; } }
+
+/* ── HERO ── */
+#hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 58px;
+}
+.hero-left {
+  background: var(--ink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem,8vw,6rem) clamp(2rem,6vw,5rem);
+  position: relative;
+  overflow: hidden;
+}
+.hero-left::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, rgba(201,168,76,.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-eyebrow {
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+.hero-eyebrow::before {
+  content: '';
+  width: 28px; height: 1px;
+  background: var(--gold);
+  display: block;
+}
+h1.hero-name {
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: .95;
+  color: var(--white);
+  letter-spacing: -.03em;
+  margin-bottom: 1.2rem;
+}
+h1.hero-name em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--gold2);
+}
+.hero-subtitle {
+  font-size: clamp(.85rem, 1.5vw, 1rem);
+  color: #94a3b8;
+  line-height: 1.7;
+  max-width: 380px;
+  margin-bottom: 2.5rem;
+}
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 2.5rem;
+}
+.hero-tag {
+  font-family: var(--mono);
+  font-size: .65rem;
+  letter-spacing: .06em;
+  color: var(--gold);
+  border: 1px solid rgba(201,168,76,.3);
+  border-radius: 2px;
+  padding: 3px 8px;
+  background: rgba(201,168,76,.05);
+}
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.btn {
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  padding: .65rem 1.4rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all .2s;
+  display: inline-block;
+}
+.btn-gold { background: var(--gold); color: var(--ink); }
+.btn-gold:hover { background: var(--gold2); transform: translateY(-1px); }
+.btn-outline { border: 1px solid rgba(255,255,255,.25); color: #ccc; }
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-1px); }
+
+.hero-right {
+  background: var(--pale);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem,6vw,5rem) clamp(2rem,5vw,4rem);
+  gap: 2rem;
+}
+.stat-card {
+  border-left: 2px solid var(--gold);
+  padding-left: 1.2rem;
+}
+.stat-num {
+  font-family: var(--serif);
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1;
+  letter-spacing: -.03em;
+}
+.stat-label {
+  font-size: .78rem;
+  color: var(--mid);
+  margin-top: .3rem;
+  font-weight: 500;
+}
+
+@media(max-width:768px){
+  #hero { grid-template-columns: 1fr; }
+  .hero-right { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; padding: 2rem; }
+}
+
+/* ── SECTIONS ── */
+section { padding: clamp(4rem,10vw,7rem) clamp(1.5rem,6vw,5rem); }
+.container { max-width: 1080px; margin: 0 auto; }
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: .65rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: .8rem;
+}
+.eyebrow::before { content: ''; width: 20px; height: 1px; background: var(--gold); display: block; }
+
+h2.sec-title {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  margin-bottom: 3rem;
+}
+
+/* ── TIMELINE ── */
+#trajetoria { background: var(--white); }
+
+.timeline { position: relative; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 110px;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+
+.tl-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 0 2.5rem;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.tl-item + .tl-item { border-top: 1px solid var(--border); }
+
+.tl-year {
+  font-family: var(--mono);
+  font-size: .72rem;
+  color: var(--mid);
+  text-align: right;
+  padding: 2rem 0;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.tl-dot {
+  position: absolute;
+  left: 103px;
+  top: 2.2rem;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--border);
+  z-index: 1;
+}
+.tl-dot.tech { border-color: var(--teal); background: var(--teal); }
+.tl-dot.commerce { border-color: var(--gold); background: var(--gold); }
+.tl-dot.finance { border-color: var(--purple); background: var(--purple); }
+.tl-dot.sales { border-color: var(--rose); background: var(--rose); }
+
+.tl-content { padding: 2rem 0; }
+
+.tl-company {
+  font-family: var(--mono);
+  font-size: .65rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .3rem;
+}
+
+.tl-role {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ink);
+  margin-bottom: .5rem;
+  line-height: 1.3;
+}
+
+.tl-desc {
+  font-size: .85rem;
+  color: var(--mid);
+  line-height: 1.65;
+  margin-bottom: .8rem;
+}
+
+.tl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+}
+.tl-tag {
+  font-family: var(--mono);
+  font-size: .6rem;
+  background: var(--pale);
+  color: var(--ink2);
+  border-radius: 2px;
+  padding: 2px 6px;
+  border: 1px solid var(--border);
+}
+
+@media(max-width:580px){
+  .timeline::before { left: 70px; }
+  .tl-item { grid-template-columns: 70px 1fr; gap: 0 1.2rem; }
+  .tl-dot { left: 63px; }
+  .tl-year { font-size: .62rem; }
+}
+
+/* ── FORMAÇÃO ── */
+#formacao { background: var(--ink); color: var(--white); }
+#formacao h2.sec-title { color: var(--white); }
+#formacao .eyebrow { color: var(--gold); }
+#formacao .eyebrow::before { background: var(--gold); }
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.edu-card {
+  border: 1px solid #2a2a35;
+  border-radius: 6px;
+  padding: 1.5rem;
+  transition: border-color .2s, transform .2s;
+  background: rgba(255,255,255,.03);
+}
+.edu-card:hover {
+  border-color: rgba(201,168,76,.4);
+  transform: translateY(-2px);
+}
+.edu-year {
+  font-family: var(--mono);
+  font-size: .65rem;
+  color: var(--gold);
+  margin-bottom: .6rem;
+}
+.edu-degree {
+  font-weight: 600;
+  font-size: .95rem;
+  color: var(--white);
+  line-height: 1.3;
+  margin-bottom: .3rem;
+}
+.edu-school {
+  font-size: .8rem;
+  color: #64748b;
+}
+
+/* ── CERTIFICAÇÕES ── */
+#certs { background: var(--pale); }
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.cert-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .8rem;
+  transition: border-color .2s, transform .2s;
+}
+.cert-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+.cert-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.cert-name {
+  font-size: .83rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+}
+.cert-cat {
+  font-family: var(--mono);
+  font-size: .62rem;
+  color: var(--mid);
+  margin-top: .3rem;
+  letter-spacing: .05em;
+}
+
+/* ── SKILLS ── */
+#skills { background: var(--white); }
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+}
+.skill-cat-title {
+  font-family: var(--mono);
+  font-size: .65rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--border);
+}
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+.skill-pill {
+  font-size: .75rem;
+  background: var(--pale);
+  color: var(--ink2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: .25rem .75rem;
+  font-weight: 500;
+  transition: border-color .15s;
+}
+.skill-pill:hover { border-color: var(--gold); }
+.skill-pill.hot {
+  background: rgba(201,168,76,.08);
+  border-color: rgba(201,168,76,.35);
+  color: #8a6a1a;
+  font-weight: 600;
+}
+
+/* ── CONQUISTAS ── */
+#conquistas { background: var(--pale); }
+
+.ach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+.ach-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.6rem;
+  border-top: 3px solid var(--gold);
+  transition: transform .2s;
+}
+.ach-card:hover { transform: translateY(-3px); }
+.ach-icon { font-size: 1.6rem; margin-bottom: .8rem; display: block; }
+.ach-metric {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: .4rem;
+  letter-spacing: -.02em;
+}
+.ach-desc {
+  font-size: .83rem;
+  color: var(--mid);
+  line-height: 1.55;
+}
+
+/* ── CONTATO ── */
+#contato {
+  background: var(--ink);
+  text-align: center;
+}
+#contato h2.sec-title { color: var(--white); margin-bottom: 1rem; }
+#contato .eyebrow { justify-content: center; }
+#contato .eyebrow::before { display: none; }
+.contato-sub {
+  font-size: .95rem;
+  color: #94a3b8;
+  max-width: 480px;
+  margin: 0 auto 2.5rem;
+}
+.contato-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: #080a0e;
+  text-align: center;
+  padding: 1.5rem;
+  font-family: var(--mono);
+  font-size: .65rem;
+  color: #3a3a4a;
+  letter-spacing: .08em;
+}
+
+/* ── REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .55s ease, transform .55s ease;
+}
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ── LEGEND ── */
+.legend {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .75rem;
+  color: var(--mid);
+  font-weight: 500;
+}
+.legend-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-brand">Roseleyne Duarte</span>
+  <ul class="nav-links">
+    <li><a href="#trajetoria">Trajetória</a></li>
+    <li><a href="#formacao">Formação</a></li>
+    <li><a href="#certs">Certificações</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#conquistas">Conquistas</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">20 anos de trajetória profissional</p>
+    <h1 class="hero-name">Rose&shy;leyne<br><em>Duarte</em><br>Silva</h1>
+    <p class="hero-subtitle">De atendimento ao cliente e e-commerce ao topo da engenharia de qualidade de software. Uma trajetória construída com consistência, aprendizado contínuo e reinvenção.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">Senior QA Engineer</span>
+      <span class="hero-tag">SDET</span>
+      <span class="hero-tag">QA Automation</span>
+      <span class="hero-tag">API Testing</span>
+      <span class="hero-tag">Performance Testing</span>
+      <span class="hero-tag">AI Testing</span>
+    </div>
+    <div class="hero-cta">
+      <a href="https://roseleyne.github.io/portfolio" target="_blank" class="btn btn-gold">Ver Portfolio Técnico</a>
+      <a href="https://github.com/Roseleyne" target="_blank" class="btn btn-outline">GitHub ↗</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="stat-card">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">anos de experiência profissional</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">8+</div>
+      <div class="stat-label">anos em QA & automação de testes</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">12</div>
+      <div class="stat-label">empresas — fintech, seguro, varejo, e-commerce, marketplace</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">5+</div>
+      <div class="stat-label">formações acadêmicas concluídas ou em andamento</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAJETÓRIA -->
+<section id="trajetoria">
+  <div class="container reveal">
+    <p class="eyebrow">linha do tempo</p>
+    <h2 class="sec-title">Trajetória Profissional</h2>
+
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--teal)"></div>Tecnologia & QA</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--gold)"></div>E-commerce & Digital</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--purple)"></div>Financeiro & Bancário</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--rose)"></div>Vendas & Relacionamento</div>
+    </div>
+
+    <div class="timeline">
+
+      <!-- C6 BANK -->
+      <div class="tl-item">
+        <div class="tl-year">Set 2025<br>Mai 2026</div>
+        <div class="tl-dot tech"></div>
+        <div class="tl-content">
+          <div class="tl-company">C6 Bank (via Cadmus)</div>
+          <div class="tl-role">Senior QA Engineer · SDET · QA Automation · Fintech & Insurance</div>
+          <p class="tl-desc">Responsável por automação de testes, API Testing e validação E2E para plataformas de fintech e seguro. Liderou validação da migração SulAmérica → MetLife com zero incidentes críticos em produção. Testes em ambientes Dev, QA e HML com Robot Framework, Python e Postman.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Robot Framework</span><span class="tl-tag">Python</span><span class="tl-tag">Postman</span><span class="tl-tag">Swagger</span><span class="tl-tag">MongoDB</span><span class="tl-tag">BrowserStack</span><span class="tl-tag">Grafana</span><span class="tl-tag">Salesforce</span><span class="tl-tag">ServiceNow</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AGF -->
+      <div class="tl-item">
+        <div class="tl-year">Out 2024<br>Set 2025</div>
+        <div class="tl-dot tech"></div>
+        <div class="tl-content">
+          <div class="tl-company">AGF</div>
+          <div class="tl-role">Senior QA Automation Engineer · Financial Systems & API Testing</div>
+          <p class="tl-desc">Automação E2E com Cypress e Python para plataformas financeiras integradas à B3 e sistemas bancários. Testes mobile com Appium e validação de apps Angular e Flutter. Validação de dados financeiros via SQL e análise de consistência de banco de dados.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Cypress</span><span class="tl-tag">Python</span><span class="tl-tag">Postman</span><span class="tl-tag">SQL</span><span class="tl-tag">Appium</span><span class="tl-tag">Angular</span><span class="tl-tag">Flutter</span><span class="tl-tag">Android Studio</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GBI -->
+      <div class="tl-item">
+        <div class="tl-year">Mar 2024<br>Set 2024</div>
+        <div class="tl-dot tech"></div>
+        <div class="tl-content">
+          <div class="tl-company">Grupo GBI</div>
+          <div class="tl-role">Senior QA Automation Engineer · ERP & Enterprise Systems</div>
+          <p class="tl-desc">Automação de testes e estratégia QA para sistemas ERP e enterprise com Java, BDD e TDD. Go Live do projeto Unimed com zero defeitos críticos — cobertura total de critérios de aceite e validação de workflows ERP.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Java</span><span class="tl-tag">Robot Framework</span><span class="tl-tag">Swagger</span><span class="tl-tag">Azure DevOps</span><span class="tl-tag">BDD</span><span class="tl-tag">TDD</span><span class="tl-tag">ERP Systems</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARREFOUR -->
+      <div class="tl-item">
+        <div class="tl-year">Jul 2022<br>Fev 2024</div>
+        <div class="tl-dot tech"></div>
+        <div class="tl-content">
+          <div class="tl-company">Grupo Carrefour Brasil</div>
+          <div class="tl-role">QA Engineer · Marketplace, E-commerce & Fulfillment</div>
+          <p class="tl-desc">Cobertura E2E do projeto Marketplace Out — implementação do Mercado Livre no ecossistema Carrefour via Fulfillment nos Centros de Distribuição (CD ECJ). Validação de integrações VTEX, ERP Gold, middleware Digibee, Janis e Mirakl.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Java</span><span class="tl-tag">Postman</span><span class="tl-tag">Camunda</span><span class="tl-tag">DBeaver</span><span class="tl-tag">Xray</span><span class="tl-tag">Digibee</span><span class="tl-tag">VTEX</span><span class="tl-tag">ERP Gold</span><span class="tl-tag">Jira</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RENNER -->
+      <div class="tl-item">
+        <div class="tl-year">Ago 2021<br>Jul 2022</div>
+        <div class="tl-dot commerce"></div>
+        <div class="tl-content">
+          <div class="tl-company">Lojas Renner S.A. — Youcom</div>
+          <div class="tl-role">Software Quality Specialist · E-commerce & Marketplace & Digital Products</div>
+          <p class="tl-desc">Qualidade de produtos digitais, integrações marketplace e validação operacional para Youcom e Renner. Suportou lançamento do Youcom App 1.0 e implementação de marketplace com Renner, Dafiti e Mercado Livre via Linx. Monitoramento de KPIs via MicroStrategy e Google Analytics 4.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Google Analytics 4</span><span class="tl-tag">MicroStrategy</span><span class="tl-tag">Linx</span><span class="tl-tag">OMS</span><span class="tl-tag">RPM</span><span class="tl-tag">Marketplace</span><span class="tl-tag">E-commerce Testing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STONE -->
+      <div class="tl-item">
+        <div class="tl-year">Set 2020<br>Mai 2021</div>
+        <div class="tl-dot sales"></div>
+        <div class="tl-content">
+          <div class="tl-company">Stone</div>
+          <div class="tl-role">Account Executive · Business Development</div>
+          <p class="tl-desc">Desenvolvimento de negócios B2B, gestão de carteira com 100+ clientes ativos, ciclo completo de vendas — prospecção, apresentação, negociação e pós-venda. Foco em retenção e metas mensais de negócio.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">B2B Sales</span><span class="tl-tag">Account Management</span><span class="tl-tag">Customer Success</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CLARO -->
+      <div class="tl-item">
+        <div class="tl-year">Jun 2019<br>Jun 2020</div>
+        <div class="tl-dot tech"></div>
+        <div class="tl-content">
+          <div class="tl-company">Claro Brasil</div>
+          <div class="tl-role">Digital Solutions Specialist · Cloud Computing & Process Mapping</div>
+          <p class="tl-desc">Mapeamento de processos AS-IS e TO-BE, operações de Cloud Computing, documentação técnica e validação de fluxos de vendas, suporte e billing para soluções digitais B2B. Experiência com AWS e ferramentas de transformação digital.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">AWS</span><span class="tl-tag">Cloud Computing</span><span class="tl-tag">Microsoft Visio</span><span class="tl-tag">Process Mapping</span><span class="tl-tag">SharePoint</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MERCADOCAR -->
+      <div class="tl-item">
+        <div class="tl-year">Out 2017<br>Fev 2019</div>
+        <div class="tl-dot tech"></div>
+        <div class="tl-content">
+          <div class="tl-company">Mercadocar Mercantil</div>
+          <div class="tl-role">Software Quality Engineer · Retail, POS & API Testing</div>
+          <p class="tl-desc">Testes funcionais e de integração para sistemas de varejo, POS, logística e e-commerce. Validação de APIs, SQL e implementação VTEX. Primeiro contato formal com automação de testes e validação de sistemas de missão crítica.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">VTEX</span><span class="tl-tag">SQL</span><span class="tl-tag">Python</span><span class="tl-tag">JSON</span><span class="tl-tag">REST APIs</span><span class="tl-tag">Azure</span><span class="tl-tag">TOTVS</span><span class="tl-tag">Zendesk</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- B2W -->
+      <div class="tl-item">
+        <div class="tl-year">Set 2016<br>Set 2017</div>
+        <div class="tl-dot tech"></div>
+        <div class="tl-content">
+          <div class="tl-company">B2W Digital</div>
+          <div class="tl-role">Software Quality Engineer · Marketplace & API Testing · SkyHub</div>
+          <p class="tl-desc">Testes de API, integração e onboarding de sellers no ecossistema B2W/SkyHub. Validação de REST APIs, JSON, regras de frete e configurações de backend. Integrações com VTEX, Magento, Oracle e sistemas enterprise.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Robot Framework</span><span class="tl-tag">Cucumber</span><span class="tl-tag">REST APIs</span><span class="tl-tag">SkyHub</span><span class="tl-tag">VTEX</span><span class="tl-tag">Magento</span><span class="tl-tag">Salesforce</span><span class="tl-tag">Oracle</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- C&A -->
+      <div class="tl-item">
+        <div class="tl-year">Jun 2013<br>Ago 2016</div>
+        <div class="tl-dot commerce"></div>
+        <div class="tl-content">
+          <div class="tl-company">C&A Brasil</div>
+          <div class="tl-role">Digital Commerce Specialist · E-commerce & Marketplace</div>
+          <p class="tl-desc">Operações de e-commerce no ecossistema VTEX — cadastro e manutenção de produtos, gestão de fornecedores, pedidos de compra, OTB, onboarding de sellers e monitoramento de KPIs digitais. Atuação em eletrônicos, moda masculina e acessórios.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">VTEX</span><span class="tl-tag">Google Analytics</span><span class="tl-tag">E-commerce Operations</span><span class="tl-tag">Marketplace</span><span class="tl-tag">Retail</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BV FINANCEIRA -->
+      <div class="tl-item">
+        <div class="tl-year">Jun 2008<br>Mar 2010</div>
+        <div class="tl-dot finance"></div>
+        <div class="tl-content">
+          <div class="tl-company">Banco BV (BV Financeira)</div>
+          <div class="tl-role">Commercial Planning & Management Assistant</div>
+          <p class="tl-desc">Retenção de pagamentos, relacionamento com clientes, cobrança ativa e planejamento comercial. Suporte à plataforma meucarronovo.com.br e controle de KPIs operacionais e comerciais.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Customer Relationship</span><span class="tl-tag">Collections</span><span class="tl-tag">Commercial Planning</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CETELEM -->
+      <div class="tl-item">
+        <div class="tl-year">Fev 2007<br>Jun 2008</div>
+        <div class="tl-dot finance"></div>
+        <div class="tl-content">
+          <div class="tl-company">Banco Cetelem · BNP Paribas</div>
+          <div class="tl-role">Accounts Assistant · Análise de Crédito</div>
+          <p class="tl-desc">Análise de crédito pessoal e corporativo — avaliação de perfil, validação documental e aprovação de contratos. Iniciação ao rigor analítico e atenção a detalhe que moldaram a carreira em QA.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Credit Analysis</span><span class="tl-tag">Risk Assessment</span><span class="tl-tag">Financial Services</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTAX -->
+      <div class="tl-item">
+        <div class="tl-year">Set 2005<br>Fev 2007</div>
+        <div class="tl-dot sales"></div>
+        <div class="tl-content">
+          <div class="tl-company">Contax-Mobitel · Credicard Itaú</div>
+          <div class="tl-role">Customer Experience Consultant · Retenção de Clientes</div>
+          <p class="tl-desc">Início da trajetória profissional em retenção de clientes, negociação de tarifas, recuperação de serviço e suporte a produtos financeiros. Primeiro contato com análise de qualidade de atendimento e metas de performance.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Customer Retention</span><span class="tl-tag">Negotiation</span><span class="tl-tag">Financial Products</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FORMAÇÃO -->
+<section id="formacao">
+  <div class="container reveal">
+    <p class="eyebrow">educação</p>
+    <h2 class="sec-title">Formação Acadêmica</h2>
+    <div class="edu-grid">
+
+      <div class="edu-card">
+        <div class="edu-year">2026 – 2027 · Em andamento</div>
+        <div class="edu-degree">Pós-Graduação em Arquitetura de Software</div>
+        <div class="edu-school">FIAP</div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-year">2026 – 2027 · Em andamento</div>
+        <div class="edu-degree">CTFL — Qualidade de Software</div>
+        <div class="edu-school">ABRAMTI · Certificação Internacional</div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-year">2025 – 2026</div>
+        <div class="edu-degree">Especialização em Cibersegurança</div>
+        <div class="edu-school">Faculdade Metropolitana</div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-year">2023 – 2023</div>
+        <div class="edu-degree">Pós-Graduação em Data Science</div>
+        <div class="edu-school">Universidade Anhembi Morumbi</div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-year">2021 – 2023</div>
+        <div class="edu-degree">MBA — Gestão de Projetos & Metodologias Ágeis</div>
+        <div class="edu-school">PUCRS · Pontifícia Universidade Católica do RS</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICAÇÕES -->
+<section id="certs">
+  <div class="container reveal">
+    <p class="eyebrow">certificações & cursos</p>
+    <h2 class="sec-title">Certificações & Cursos</h2>
+    <div class="cert-grid">
+
+      <div class="cert-card">
+        <span class="cert-icon">🎓</span>
+        <div>
+          <div class="cert-name">CS50 — Ciências da Computação</div>
+          <div class="cert-cat">Harvard · edX · Fundamentos de Computação</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-icon">🤖</span>
+        <div>
+          <div class="cert-name">AI Builder com Lovable</div>
+          <div class="cert-cat">Inteligência Artificial · No-Code AI Development</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-icon">⚙️</span>
+        <div>
+          <div class="cert-name">Automatizando com n8n</div>
+          <div class="cert-cat">Workflow Automation · RPA · Integração de Sistemas</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-icon">🔄</span>
+        <div>
+          <div class="cert-name">Metodologias Ágeis e Ciclo de Desenvolvimento de Software</div>
+          <div class="cert-cat">Agile · Scrum · SDLC</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-icon">📐</span>
+        <div>
+          <div class="cert-name">Vetores e Matrizes</div>
+          <div class="cert-cat">Fundamentos Matemáticos · Computação</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-icon">🛒</span>
+        <div>
+          <div class="cert-name">E-commerce Management & Digital Marketing</div>
+          <div class="cert-cat">ComSchool · Escola de Negócios Digitais</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-icon">🏪</span>
+        <div>
+          <div class="cert-name">Marketplace Management</div>
+          <div class="cert-cat">ComSchool · Gestão de Canais Digitais</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container reveal">
+    <p class="eyebrow">competências técnicas</p>
+    <h2 class="sec-title">Tech Stack & Skills</h2>
+    <div class="skills-wrapper">
+
+      <div>
+        <div class="skill-cat-title">QA Automation</div>
+        <div class="skill-pills">
+          <span class="skill-pill hot">Cypress</span>
+          <span class="skill-pill hot">Playwright</span>
+          <span class="skill-pill">Selenium</span>
+          <span class="skill-pill">Robot Framework</span>
+          <span class="skill-pill">Appium</span>
+          <span class="skill-pill">Cucumber</span>
+          <span class="skill-pill">JUnit</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-cat-title">API & Performance Testing</div>
+        <div class="skill-pills">
+          <span class="skill-pill hot">Postman</span>
+          <span class="skill-pill">Rest-Assured</span>
+          <span class="skill-pill">Swagger / OpenAPI</span>
+          <span class="skill-pill hot">JMeter</span>
+          <span class="skill-pill">Newman</span>
+          <span class="skill-pill">Grafana</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-cat-title">Linguagens & Scripting</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">Ruby</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-cat-title">CI/CD & DevOps</div>
+        <div class="skill-pills">
+          <span class="skill-pill hot">GitHub Actions</span>
+          <span class="skill-pill">Azure Pipelines</span>
+          <span class="skill-pill">Azure DevOps</span>
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">Docker</span>
+          <span class="skill-pill">Bitbucket</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-cat-title">Cloud & Banco de Dados</div>
+        <div class="skill-pills">
+          <span class="skill-pill">AWS</span>
+          <span class="skill-pill">Azure</span>
+          <span class="skill-pill">MongoDB</span>
+          <span class="skill-pill">MySQL</span>
+          <span class="skill-pill">SQL Server</span>
+          <span class="skill-pill">DBeaver</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-cat-title">Gestão & Colaboração</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Jira</span>
+          <span class="skill-pill">Confluence</span>
+          <span class="skill-pill">Xray</span>
+          <span class="skill-pill">Camunda</span>
+          <span class="skill-pill">Digibee</span>
+          <span class="skill-pill">ServiceNow</span>
+          <span class="skill-pill">Salesforce</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-cat-title">E-commerce & Marketplace</div>
+        <div class="skill-pills">
+          <span class="skill-pill">VTEX</span>
+          <span class="skill-pill">Magento</span>
+          <span class="skill-pill">SkyHub</span>
+          <span class="skill-pill">Linx</span>
+          <span class="skill-pill">Google Analytics 4</span>
+          <span class="skill-pill">MicroStrategy</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-cat-title">AI Testing & Automação 2026</div>
+        <div class="skill-pills">
+          <span class="skill-pill hot">AI Test Generation</span>
+          <span class="skill-pill hot">Prompt Engineering</span>
+          <span class="skill-pill">n8n Automation</span>
+          <span class="skill-pill">Self-healing Selectors</span>
+          <span class="skill-pill">LLM Integration</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONQUISTAS -->
+<section id="conquistas">
+  <div class="container reveal">
+    <p class="eyebrow">impacto comprovado</p>
+    <h2 class="sec-title">Conquistas & Resultados</h2>
+    <div class="ach-grid">
+
+      <div class="ach-card">
+        <span class="ach-icon">🏦</span>
+        <div class="ach-metric">Zero</div>
+        <p class="ach-desc">incidentes críticos na migração SulAmérica → MetLife (C6 Bank) — cobertura E2E completa de fluxos financeiros de seguro</p>
+      </div>
+
+      <div class="ach-card">
+        <span class="ach-icon">⚡</span>
+        <div class="ach-metric">3M+</div>
+        <p class="ach-desc">requisições/dia validadas com JMeter em plataforma de e-commerce de alto volume — throughput de 3.2M req/dia</p>
+      </div>
+
+      <div class="ach-card">
+        <span class="ach-icon">🛒</span>
+        <div class="ach-metric">E2E</div>
+        <p class="ach-desc">cobertura completa do Marketplace Out Carrefour/Mercado Livre — Fulfillment via CD, VTEX, ERP Gold e Digibee</p>
+      </div>
+
+      <div class="ach-card">
+        <span class="ach-icon">✅</span>
+        <div class="ach-metric">Zero</div>
+        <p class="ach-desc">defeitos críticos pós-deploy no Go Live Unimed — regressão E2E completa com BDD/TDD em sistemas ERP enterprise</p>
+      </div>
+
+      <div class="ach-card">
+        <span class="ach-icon">🎓</span>
+        <div class="ach-metric">5+</div>
+        <p class="ach-desc">formações acadêmicas em tecnologia — Arquitetura de Software, Cibersegurança, Data Science, MBA Ágil e CTFL</p>
+      </div>
+
+      <div class="ach-card">
+        <span class="ach-icon">🔄</span>
+        <div class="ach-metric">20</div>
+        <p class="ach-desc">anos de carreira — reinventada de atendimento ao cliente e e-commerce para o topo da engenharia de qualidade de software</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="container reveal">
+    <p class="eyebrow" style="justify-content:center">disponível</p>
+    <h2 class="sec-title">Pronta para o próximo desafio</h2>
+    <p class="contato-sub">Aberta a oportunidades como Senior QA Engineer, SDET ou QA Automation Engineer — presencial, híbrido ou remoto.</p>
+    <div class="contato-links">
+      <a href="mailto:roseleyne.duarte@gmail.com" class="btn btn-gold">✉ roseleyne.duarte@gmail.com</a>
+      <a href="https://roseleyne.github.io/portfolio" target="_blank" class="btn btn-outline">🌐 Portfolio Técnico</a>
+      <a href="https://www.linkedin.com/in/roseleyne-duarte-silva/" target="_blank" class="btn btn-outline">💼 LinkedIn</a>
+      <a href="https://github.com/Roseleyne" target="_blank" class="btn btn-outline">🐙 GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Roseleyne Duarte Silva · Senior QA Engineer · São Paulo, BR · <span id="yr"></span>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
