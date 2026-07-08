@@ -531,11 +531,22 @@ footer {
 }
 .legend-item {
   display: flex;
-  align-items: center;
-  gap: .5rem;
+  flex-direction: column;
+  gap: .35rem;
   font-size: .75rem;
   color: var(--mid);
   font-weight: 500;
+}
+.legend-top {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.legend-pct {
+  font-family: var(--mono);
+  font-size: .68rem;
+  color: var(--ink2);
+  padding-left: 1.1rem;
 }
 .legend-dot {
   width: 10px; height: 10px;
@@ -609,10 +620,22 @@ footer {
     <h2 class="sec-title">Trajetória Profissional</h2>
 
     <div class="legend">
-      <div class="legend-item"><div class="legend-dot" style="background:var(--teal)"></div>Tecnologia & QA</div>
-      <div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div>E-commerce & Digital</div>
-      <div class="legend-item"><div class="legend-dot" style="background:var(--purple)"></div>Financeiro & Bancário</div>
-      <div class="legend-item"><div class="legend-dot" style="background:var(--rose)"></div>Vendas & Relacionamento</div>
+      <div class="legend-item">
+        <div class="legend-top"><div class="legend-dot" style="background:var(--teal)"></div>Tecnologia & QA</div>
+        <div class="legend-pct">43% da carreira</div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-top"><div class="legend-dot" style="background:var(--amber)"></div>E-commerce & Digital</div>
+        <div class="legend-pct">25% da carreira</div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-top"><div class="legend-dot" style="background:var(--purple)"></div>Financeiro & Bancário</div>
+        <div class="legend-pct">19% da carreira</div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-top"><div class="legend-dot" style="background:var(--rose)"></div>Vendas & Relacionamento</div>
+        <div class="legend-pct">13% da carreira</div>
+      </div>
     </div>
 
     <div class="timeline">
